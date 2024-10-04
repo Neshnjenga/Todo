@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<table class="table">
+    <tr>
+        <th>User_id</th>
+        <th>Your todo</th>
+    </tr>
+    {% for keb in data %}
+    <tr>
+        <td>{{keb[1]}}</td>
+        <td>{{keb[2]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
